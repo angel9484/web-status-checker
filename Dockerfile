@@ -31,4 +31,4 @@ ENV UWSGI_HTTP=:8080 UWSGI_MASTER=1 UWSGI_HTTP_AUTO_CHUNKED=1 UWSGI_HTTP_KEEPALI
 ENV UWSGI_WORKERS=2 UWSGI_THREADS=4
 
 EXPOSE 8080 8081 8182
-CMD ["uwsgi","-s","/tmp/myapplication.sock","--show-config","--need-app","--manage-script-name","--mount","/=web_status_checker.main_application:app"]
+CMD ["uwsgi","-s","/tmp/myapplication.sock","--show-config","--need-app","--manage-script-name","--mount","/=web_status_checker.main_application:create_app()"]
