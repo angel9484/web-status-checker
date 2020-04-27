@@ -1,0 +1,7 @@
+# https://getmail.pyropus.narkive.com/Jb3blZUS/4-0-9-setup-py-bdist-rpm-non-functional-w-python-2-3-4
+# https://stackoverflow.com/questions/10404485/include-non-python-files-in-rpm-with-setuptools
+# https://github.com/django/django/blob/master/MANIFEST.in
+
+include requirements.txt
+include rpm/*
+
